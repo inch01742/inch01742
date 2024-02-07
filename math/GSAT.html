@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inchmath</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- LaTeX輸入 -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
+
+      <!-- 連結JQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel = "stylesheet" href = "CSS.css">
+</head>
+<body>
+    <header>
+        <h1>承億數學網站(緩慢製作中)</h1>
+        <nav class = "navbar navbar-expand-lg navbar-light ">
+            <div class = "container-fluid">
+                <!-- logo -->
+                <a class = "navbar-brand" href = "frontpage.html"><img width = "66px" height = "88px" src = "images/1.png"></a>
+                <!-- 手機版 -->
+                <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#linkbar">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+                <!-- 桌機版 -->
+                <div class = "collapse navbar-collapse" id = "linkbar">
+                    <ul class = "navbar-nav me-auto">
+                        <!-- 第一冊 -->
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" data-bs-toggle = "dropdown" href = "B2page.html">第一冊</a>
+                            <!-- 下拉式選單選項 Dropdown items -->
+                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">數與式</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">數與數線</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">式的運算</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">指數與常用對數</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">多項式函數</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">多項式的運算與應用</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">簡單多項式函數及其圖形</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">多項式函數的圖形與多項式不等式</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">直線與圓</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">直線方程式及其圖形</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">直線方程式的應用</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">圓與直線的關係</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>                            
+                            </ul>   
+                        </li>
+                        <!-- 第二冊 -->
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" data-bs-toggle = "dropdown" href = "#">第二冊</a>
+                            <!-- 下拉式選單選項 Dropdown items -->
+                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">數列與級數</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">數列與遞迴關係</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "sequence1.html">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">級數</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">排列組合與機率</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">計數原理</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">排列</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">組合</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">機率</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">數據分析</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">一維數據分析</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">二維數據分析</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">三角比</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">直角三角形的邊角關係</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">廣義角與極坐標</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">面積公式與正餘弦定理</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>                            
+                            </ul>   
+                        </li>
+                        <!-- 第三冊 -->
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" data-bs-toggle = "dropdown" href = "B2page.html">第三冊</a>
+                            <!-- 下拉式選單選項 Dropdown items -->
+                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">三角函數</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">弧度量</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">三角函數的圖形</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">三角函數的和差角公式(數A限定)</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">正餘弦函數的疊合(數A限定)</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">指數與對數函數</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">指數函數及其圖形</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">對數與對數律</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">對數函數及其圖形</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">平面向量</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">平面向量的運算</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">平面向量的內積</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">平面向量的應用(數A限定)</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>                            
+                            </ul>   
+                        </li>
+                        <!-- 第四冊 -->
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" data-bs-toggle = "dropdown" href = "B2page.html">第四冊</a>
+                            <!-- 下拉式選單選項 Dropdown items -->
+                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">空間向量</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">空間概念</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">空間坐標系(數B限定)</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">空間向量的坐標表示法(數A限定)</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">空間向量的內積(數A限定)</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">外積、體積與行列式(數A限定)</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">空間中的平面與直線(數A限定)</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">平面方程式</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">空間中的直線</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">條件機率</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">條件機率與獨立事件</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">貝氏定理</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">矩陣</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">三元一次方程組</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">矩陣的運算</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">矩陣的應用(數A限定)</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">圓錐曲線(數B限定)</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">圓錐曲線</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>                            
+                            </ul>   
+                        </li>
+                        <!-- 選修數學甲 -->
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" data-bs-toggle = "dropdown" href = "B2page.html">選修數學甲</a>
+                            <!-- 下拉式選單選項 Dropdown items -->
+                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">極限與函數</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">數列的極限與無窮等比級數</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">函數與函數的極限</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">微分</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">微分與切線</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">導函數與函數圖形</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">積分</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">積分的意義</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">積分的應用</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">機率與統計</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">離散型隨機變數</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">二項分布與幾何分布</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">複數與多項式方程式</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">                                    
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">複數與多項式方程式</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">複數的幾何意義</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">二次曲線</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">拋物線</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">橢圓</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">雙曲線</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>                                                        
+                            </ul>   
+                        </li>
+                        <!-- 選修數學乙 -->
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" data-bs-toggle = "dropdown" href = "B2page.html">選修數學乙</a>
+                            <!-- 下拉式選單選項 Dropdown items -->
+                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">極限與函數</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">數列的極限與無窮等比級數</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">函數與函數的極限</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">微分</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">微分與切線</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">導函數與函數圖形</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">積分</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">積分的意義</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">積分的應用</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">機率與統計</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">離散型隨機變數</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">二項分布</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">複數</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">複數與複數平面</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">多項式方程式的根</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">線性規劃</a>
+                                    <!-- 子選單 Level 2 -->
+                                    <ul class = "dropdown-menu dropdown-menu-dark">
+                                        <li class = "dropdown-submenu"><a class = "dropdown-item dropdown-toggle" href = "#">線性規劃</a>
+                                            <!-- 子選單 Level 3 -->
+                                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                                <li><a class = "dropdown-item" href = "#">基礎訓練</a></li>
+                                                <li><a class = "dropdown-item" href = "#">進階練習</a></li>
+                                                <li><a class = "dropdown-item" href = "#">大考觀摩</a></li>
+                                            </ul>
+                                    </ul>
+                                </li>                    
+                            </ul>   
+                        </li>
+                        <!-- 大考試題 -->
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" data-bs-toggle = "dropdown" href = "B2page.html">大考試題</a>
+                            <!-- 下拉式選單選項 Dropdown items -->
+                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                <a class = "dropdown-item" href = "#">學科能力測驗</a>
+                                <a class = "dropdown-item" href = "#">分科測驗(110年前指考)</a>
+                                <a class = "dropdown-item" href = "#">大學聯合招生考試</a>
+                            </ul>
+                        </li>
+                        <!-- 教甄專區 -->
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" data-bs-toggle = "dropdown" href = "#">教甄專區</a>
+                            <!-- 下拉式選單選項 Dropdown items -->
+                            <ul class = "dropdown-menu dropdown-menu-dark">
+                                <a class = "dropdown-item" href = "#">筆記分享</a>
+                                <a class = "dropdown-item" href = "#">歷屆試題</a>
+                            </ul>
+                        </li>
+                        <!-- 關於我 -->
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "#">關於我</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <div class = "container">
+
+            <!-- 第一部份：標籤分頁的導覽列 -->
+            <div class = "nav nav-tabs nav-justified">
+                <!-- 按鈕1 -->
+                <button class = "nav-link active" data-bs-toggle = "tab" data-bs-target = "#menu1" aria-selected = "true">
+                    歷屆試題
+                </button>
+
+                <!-- 按鈕2 -->
+                <button class = "nav-link" data-bs-toggle = "tab" data-bs-target = "#menu2" aria-selected = "false">
+                    成績標準一覽表
+                </button>
+
+                <!-- 按鈕3 -->
+                <button class = "nav-link" data-bs-toggle = "tab" data-bs-target = "#menu3" aria-selected = "false">
+                    原得總分與級分對照表
+                </button>
+
+            </div>
+
+            <!-- 第二部份：標籤分頁的內容 -->
+
+            <div class = "tab-content">
+                <!-- 第1個內容 -->
+                <div class = "tab-pane fade show active" id = "menu1">
+                    <br>
+                    <table>
+                        <tr>
+                            <th> 標題 </th>
+                            <th> 選擇(填)題答案 </th>
+                            <th> 非選擇題答案 </th>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "#" target = "_blank"> 113學年度學科能力測驗-數A </a> </td>
+                            <td> <a style="color: black;" href = "#" target = "_blank"> 選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"> </a> </td>
+                            <td> <a style="color: black;" href = "#" target = "_blank"> 非選擇題答案<img width = "45px" height = "40px" src = "images/pdf.png"> </a> </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "#" target = "_blank"> 113學年度學科能力測驗-數B</a> </td>
+                            <td> <a style="color: black;" href = "#" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td> <a style="color: black;" href = "#" target = "_blank">非選擇題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/112學測數A.pdf" target = "_blank"> 112學年度學科能力測驗-數A</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/112學測數A答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/112學測數A非選答案.pdf" target = "_blank">非選擇題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/112學測數B.pdf" target = "_blank"> 112學年度學科能力測驗-數B</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/112學測數B答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/112學測數B非選答案.pdf" target = "_blank">非選擇題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/111學測數A.pdf" target = "_blank"> 111學年度學科能力測驗-數A</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/111學測數A答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/111學測數A非選答案.pdf" target = "_blank">非選擇題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/111學測數B.pdf" target = "_blank"> 111學年度學科能力測驗-數B</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/111學測數B答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/111學測數B非選答案.pdf" target = "_blank">非選擇題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/110學測.pdf" target = "_blank"> 110學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/110學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/109學測.pdf" target = "_blank"> 109學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/109學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/108學測.pdf" target = "_blank"> 108學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/108學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/107學測.pdf" target = "_blank"> 107學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/107學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/106學測.pdf" target = "_blank"> 106學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/106學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/105學測.pdf" target = "_blank"> 105學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/105學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/104學測.pdf" target = "_blank"> 104學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/104學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/103學測.pdf" target = "_blank"> 103學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/103學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/102學測.pdf" target = "_blank"> 102學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/102學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/101學測.pdf" target = "_blank"> 101學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/101學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/100學測.pdf" target = "_blank"> 100學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/100學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/99學測.pdf" target = "_blank"> 99學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/99學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/98學測.pdf" target = "_blank"> 98學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/98學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/97學測.pdf" target = "_blank"> 97學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/97學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/96學測.pdf" target = "_blank"> 96學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/96學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/95學測.pdf" target = "_blank"> 95學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/95學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/94學測.pdf" target = "_blank"> 94學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/94學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td> <a style="color: black;" href = "大考/90~113學測/93學測.pdf" target = "_blank"> 93學年度學科能力測驗</a> </td>
+                            <td> <a style="color: black;" href = "大考/90~113學測/93學測答案.pdf" target = "_blank">選擇(填)題答案<img width = "45px" height = "40px" src = "images/pdf.png"></a> </td>
+                            <td>  </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <!-- 第2個內容 -->
+                <div class = "tab-pane fade" id = "menu2">
+                    <br>
+                    <table>
+                        <tr>
+                            <th> 年份 </th>
+                            <th> 頂標 </th>
+                            <th> 前標 </th>
+                            <th> 均標 </th>
+                            <th> 後標 </th>
+                            <th> 底標 </th>
+                            <th> 滿級人數 </th>
+                        </tr>
+                        <tr>
+                            <td> 113數A </td>
+                            <td> # </td>
+                            <td> # </td>
+                            <td> # </td>
+                            <td> # </td>
+                            <td> # </td>
+                            <td> # </td>
+                        </tr>
+                        <tr>
+                            <td> 113數B </td>
+                            <td> # </td>
+                            <td> # </td>
+                            <td> # </td>
+                            <td> # </td>
+                            <td> # </td>
+                            <td> # </td>
+                        </tr>
+                        <tr>
+                            <td> 112數A </td>
+                            <td> 11 </td>
+                            <td> 9 </td>
+                            <td> 7 </td>
+                            <td> 5 </td>
+                            <td> 4 </td>
+                            <td> 1312(1.54%) </td>
+                        </tr>
+                        <tr>
+                            <td> 112數B </td>
+                            <td> 12 </td>
+                            <td> 10 </td>
+                            <td> 7 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 1736(1.78%) </td>
+                        </tr>
+                        <tr>
+                            <td> 111數A </td>
+                            <td> 10 </td>
+                            <td> 8 </td>
+                            <td> 6 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 789(0.99%) </td>
+                        </tr>
+                        <tr>
+                            <td> 111數B </td>
+                            <td> 13 </td>
+                            <td> 11 </td>
+                            <td> 8 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 3008(3.32%) </td>
+                        </tr>
+                        <tr>
+                            <td> 110 </td>
+                            <td> 11 </td>
+                            <td> 9 </td>
+                            <td> 6 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 1558(1.26%) </td>
+                        </tr>
+                        <tr>
+                            <td> 109 </td>
+                            <td> 14 </td>
+                            <td> 13 </td>
+                            <td> 9 </td>
+                            <td> 5 </td>
+                            <td> 4 </td>
+                            <td> 14489(11.22%) </td>
+                        </tr>
+                        <tr>
+                            <td> 108 </td>
+                            <td> 14 </td>
+                            <td> 12 </td>
+                            <td> 9 </td>
+                            <td> 5 </td>
+                            <td> 4 </td>
+                            <td> 7782(5.82%) </td>
+                        </tr>
+                        <tr>
+                            <td> 107 </td>
+                            <td> 12 </td>
+                            <td> 10 </td>
+                            <td> 6 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 3700(2.75%) </td>
+                        </tr>
+                        <tr>
+                            <td> 106 </td>
+                            <td> 11 </td>
+                            <td> 9 </td>
+                            <td> 6 </td>
+                            <td> 3 </td>
+                            <td> 2 </td>
+                            <td> 1791(1.41%) </td>
+                        </tr>
+                        <tr>
+                            <td> 105 </td>
+                            <td> 12 </td>
+                            <td> 10 </td>
+                            <td> 7 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 2815(2.11%) </td>
+                        </tr>
+                        <tr>
+                            <td> 104 </td>
+                            <td> 12 </td>
+                            <td> 10 </td>
+                            <td> 7 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 2984(2.07%) </td>
+                        </tr>
+                        <tr>
+                            <td> 103 </td>
+                            <td> 13 </td>
+                            <td> 11 </td>
+                            <td> 8 </td>
+                            <td> 5 </td>
+                            <td> 3 </td>
+                            <td> 6749(4.63%) </td>
+                        </tr>
+                        <tr>
+                            <td> 102 </td>
+                            <td> 12 </td>
+                            <td> 10 </td>
+                            <td> 7 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 2881(1.95%) </td>
+                        </tr>
+                        <tr>
+                            <td> 101 </td>
+                            <td> 13 </td>
+                            <td> 11 </td>
+                            <td> 7 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 5867(3.84%) </td>
+                        </tr>
+                        <tr>
+                            <td> 100 </td>
+                            <td> 13 </td>
+                            <td> 11 </td>
+                            <td> 7 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 5869(4.07%) </td>
+                        </tr>
+                        <tr>
+                            <td> 99 </td>
+                            <td> 10 </td>
+                            <td> 8 </td>
+                            <td> 5 </td>
+                            <td> 3 </td>
+                            <td> 2 </td>
+                            <td> 2059(1.47%) </td>
+                        </tr>
+                        <tr>
+                            <td> 98 </td>
+                            <td> 11 </td>
+                            <td> 9 </td>
+                            <td> 6 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 1745(1.25%) </td>
+                        </tr>
+                        <tr>
+                            <td> 97 </td>
+                            <td> 11 </td>
+                            <td> 9 </td>
+                            <td> 6 </td>
+                            <td> 4 </td>
+                            <td> 2 </td>
+                            <td> 2921(1.98%) </td>
+                        </tr>
+                        <tr>
+                            <td> 96 </td>
+                            <td> 10 </td>
+                            <td> 8 </td>
+                            <td> 6 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 1865(1.24%) </td>
+                        </tr>
+                        <tr>
+                            <td> 95 </td>
+                            <td> 12 </td>
+                            <td> 10 </td>
+                            <td> 6 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 5313(3.36%) </td>
+                        </tr>
+                        <tr>
+                            <td> 94 </td>
+                            <td> 11 </td>
+                            <td> 9 </td>
+                            <td> 6 </td>
+                            <td> 4 </td>
+                            <td> 2 </td>
+                            <td> 3161(2.01%) </td>
+                        </tr>
+                        <tr>
+                            <td> 93 </td>
+                            <td> 11 </td>
+                            <td> 9 </td>
+                            <td> 6 </td>
+                            <td> 4 </td>
+                            <td> 3 </td>
+                            <td> 2473(1.60%) </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <p>92年以前成績標準格式不同，暫不列出</p>
+                </div>
+                <!-- 第3個內容 -->
+                <div class = "tab-pane fade" id = "menu3">
+                    <br>
+                    <table>
+                        <tr>
+                            <th> 標題 </th>
+                            <th> 選擇(填)題答案 </th>
+                            <th> 非選擇題答案 </th>
+                            <th> 非選擇題答案 </th>
+                            <th> 非選擇題答案 </th>
+                            <th> 非選擇題答案 </th>
+
+                        </tr>
+                        <tr>
+                            <td> <a href = "大考/90~113學測/112學測數A.pdf" target = "_blank"> 113學年度學科能力測驗</a> </td>
+                            <td> # </td>
+                            <td> # </td>
+                        </tr>
+                        <tr>
+                            <td> 112學年度學科能力測驗 </td>
+                            <td> 0987654321 </td>
+                            <td> inch@gmail.com </td>
+                        </tr>
+                        <tr>
+                            <td> 111學年度學科能力測驗 </td>
+                            <td> 0987654321 </td>
+                            <td> inch@gmail.com </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
